@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "benchmarks",
+  "info": {
+    "name": "Benchmark",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "height": {
+      "type": "decimal"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "bodyFat": {
+      "type": "decimal"
+    },
+    "bmi": {
+      "type": "decimal"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "benchmarks_id"
+    },
+    "required_calories_intake": {
+      "type": "integer"
+    },
+    "calories_intakes": {
+      "via": "benchmark_id",
+      "collection": "calories-intake"
+    },
+    "muscle": {
+      "type": "decimal"
+    },
+    "bone_mass": {
+      "type": "decimal"
+    },
+    "water": {
+      "type": "decimal"
+    }
+  }
+}

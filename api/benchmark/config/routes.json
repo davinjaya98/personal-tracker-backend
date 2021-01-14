@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/benchmarks",
+      "handler": "benchmark.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/benchmarks/count",
+      "handler": "benchmark.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/benchmarks/:id",
+      "handler": "benchmark.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/benchmarks",
+      "handler": "benchmark.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/benchmarks/:id",
+      "handler": "benchmark.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/benchmarks/:id",
+      "handler": "benchmark.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

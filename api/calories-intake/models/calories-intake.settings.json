@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calories_intakes",
+  "info": {
+    "name": "Calories Intake",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "carbohydrates": {
+      "type": "decimal"
+    },
+    "protein": {
+      "type": "decimal"
+    },
+    "saturated_fat": {
+      "type": "decimal"
+    },
+    "unsaturated_fat": {
+      "type": "decimal"
+    },
+    "meal_name": {
+      "type": "string"
+    },
+    "benchmark_id": {
+      "model": "benchmark",
+      "via": "calories_intakes"
+    },
+    "calories": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/calories-intakes",
+      "handler": "calories-intake.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/calories-intakes/count",
+      "handler": "calories-intake.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/calories-intakes/:id",
+      "handler": "calories-intake.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/calories-intakes",
+      "handler": "calories-intake.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/calories-intakes/:id",
+      "handler": "calories-intake.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/calories-intakes/:id",
+      "handler": "calories-intake.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
